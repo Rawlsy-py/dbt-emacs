@@ -8,6 +8,9 @@ A lightweight minor mode to run, compile, and test dbt models in Emacs using `uv
 
 ```bash
 uv tool install dbt-core --with dbt-databricks
+# or other
+uv tool install dbt-core --with dbt-snowflake
+uv tool install dbt-core --with dbt-postgres
 ```
 
 ### 2. Doom Emacs Setup
@@ -15,8 +18,8 @@ uv tool install dbt-core --with dbt-databricks
 Add to `~/.config/doom/packages.el`:
 
 ```elisp
-(package! dbt-mode
-  :recipe (:host github :repo "your-username/dbt-mode"))
+(package! dbt-emacs
+  :recipe (:host github :repo "Rawlsy-py/dbt-emacs"))
 ```
 
 Add to `~/.config/doom/config.el`:
