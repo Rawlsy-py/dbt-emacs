@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: dbt config block
+# key: cfg
+# --
+{{ config(
+    materialized='${1:|table,view,incremental,ephemeral|}',
+    ${2:unique_key='${3:id}'}
+) }}
+
+$0

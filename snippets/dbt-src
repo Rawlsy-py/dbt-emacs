@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: dbt source
+# key: src
+# --
+{{ source('${1:source_name}', '${2:table_name}') }}$0
