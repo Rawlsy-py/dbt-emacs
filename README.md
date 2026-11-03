@@ -1,4 +1,4 @@
-# dbt-mode
+# dbt-eMacs
 
 A lightweight minor mode to run, compile, and test dbt models in Emacs using `uv tool`.
 
@@ -25,8 +25,8 @@ Add to `~/.config/doom/packages.el`:
 Add to `~/.config/doom/config.el`:
 
 ```elisp
-(use-package! dbt-mode
-  :hook (sql-mode . dbt-mode))
+(use-package! dbt-emacs
+  :hook (sql-mode . dbt-emacs))
 
 (after! sql
   (map! :map sql-mode-map
